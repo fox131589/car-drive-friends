@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CAR & DRIVE FRIENDS | 車好き・ドライブ好き募集</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Noto+Sans+JP:wght@400;500;700;900&family=Bitter:wght@300;400&family=Courier+Prime&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- スクロール進捗バー -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- カーソルグロー -->
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- ローディング -->
+<div class="loader" id="loader">
+  <div class="collab">
+    <div class="collab-car">CAR<span>&</span>DRIVE</div>
+    <div class="collab-x">×</div>
+    <div class="arimura-logo">
+      <div class="arimura-name">Arimura</div>
+      <div class="arimura-line"></div>
+      <div class="arimura-sub">hair salon</div>
+    </div>
+  </div>
+</div>
+
+<!-- ヘッダー -->
+<header class="header" id="header">
+  <div class="header-inner">
+    <a href="#top" class="logo header-logo">
+      <span class="hl-car">CAR<span>&</span>DRIVE</span>
+      <span class="hl-x">×</span>
+      <span class="mini-arimura"><b>Arimura</b><i></i><em>hair salon</em></span>
+    </a>
+    <nav class="nav">
+      <a href="#about">ABOUT</a>
+      <a href="#style">STYLE</a>
+      <a href="#gallery">GALLERY</a>
+      <a href="#requirement">RECRUITMENT</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- モバイルメニュー -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about">ABOUT</a>
+  <a href="#style">STYLE</a>
+  <a href="#gallery">GALLERY</a>
+  <a href="#requirement">RECRUITMENT</a>
+</div>
+
+<!-- ヒーロー -->
+<section class="hero" id="top">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <p class="hero-kicker" data-aos>CAR DRIVE × Arimura hair salon</p>
+    <h1 class="hero-title" data-aos>
+      <span class="line"><span class="char">景</span><span class="char">色</span><span class="char">を</span><span class="char">見</span><span class="char">に</span><span class="char">、</span></span>
+      <span class="line"><span class="char">ふ</span><span class="char">ら</span><span class="char">っ</span><span class="char">と</span><span class="char">ド</span><span class="char">ラ</span><span class="char">イ</span><span class="char">ブ</span><span class="char">。</span></span>
+    </h1>
+    <p class="hero-sub" data-aos>
+      景色を眺めて、写真を撮って、おいしいものを食べる。<br>
+      車に詳しくなくてもOK。のんびりドライブを楽しめる仲間を探しています。
+    </p>
+    <div class="hero-cta" data-aos>
+      <a href="#contact" class="btn btn-primary">気になる方はArimura美容室の担当者まで！</a>
+      <a href="#about" class="btn btn-outline">詳しく見る</a>
+    </div>
+  </div>
+  <div class="scroll-down">
+    <span>SCROLL</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- マーキー -->
+<div class="marquee">
+  <div class="marquee-track">
+    <span>DRIVE</span><span>PHOTO</span><span>CAR TALK</span><span>NIGHT VIEW</span><span>ROAD TRIP</span><span>CAFE STOP</span>
+    <span>DRIVE</span><span>PHOTO</span><span>CAR TALK</span><span>NIGHT VIEW</span><span>ROAD TRIP</span><span>CAFE STOP</span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="container">
+    <p class="section-kicker" data-aos>ABOUT US</p>
+    <h2 class="section-title" data-aos>好きなことを、<br>好きなだけ語れる場所</h2>
+    <div class="about-grid">
+      <div class="about-card" data-aos>
+        <div class="about-num">01</div>
+        <h3>ドライブ</h3>
+        <p>景色のいい峠道や海沿いを、気の合う仲間と一緒に走る。目的地よりも過程を楽しむドライブ。</p>
+      </div>
+      <div class="about-card" data-aos>
+        <div class="about-num">02</div>
+        <h3>撮影</h3>
+        <p>愛車と絶景をフレームに収める。夕焼け、夜景、星空——最高の一枚を追い求めて。</p>
+      </div>
+      <div class="about-card" data-aos>
+        <div class="about-num">03</div>
+        <h3>カフェ&トーク</h3>
+        <p>ドライブ先のカフェや道の駅で一息ついて、車の話や最近あったことをゆるく話す。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STYLE / 動画風セクション -->
+<section class="style-section" id="style">
+  <div class="style-overlay"></div>
+  <div class="container style-content">
+    <p class="section-kicker light" data-aos>OUR STYLE</p>
+    <h2 class="section-title light" data-aos>車種は問わない。<br>大事なのは、車が好きな気持ち。</h2>
+    <p class="style-text" data-aos>
+      国産・輸入車、新車・旧車、MT・AT——こだわりは人それぞれ。
+      それでいい。共通しているのは「車が好き」という気持ちだけ。
+      上下関係なく、フラットに楽しめるコミュニティを目指しています。
+    </p>
+    <div class="style-tags" data-aos>
+      <span>#ドライブ好き</span>
+      <span>#カメラ好き</span>
+      <span>#花や自然の写真</span>
+      <span>#カフェ巡り</span>
+      <span>#夜景巡り</span>
+      <span>#車談義</span>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery" id="gallery">
+  <div class="container">
+    <p class="section-kicker" data-aos>GALLERY IMAGE</p>
+    <h2 class="section-title" data-aos>そんな瞬間を、これから</h2>
+  </div>
+  <div class="gallery-grid" id="galleryGrid">
+    <div class="gallery-item g2 photo-slide" data-aos
+      data-full-list="images/gallery-2-1.jpg,images/gallery-2-2.jpg,images/gallery-2-3.jpg,images/gallery-2-4.jpg,images/gallery-2-5.jpg,images/gallery-2-6.jpg,images/gallery-2-7.jpg,images/gallery-2-8.jpg">
+      <div class="flower-slide-img" style="background-image:url('images/gallery-2-1.jpg')"></div>
+      <div class="flower-slide-img" style="background-image:url('images/gallery-2-2.jpg')"></div>
+      <div class="flower-slide-img" style="background-image:url('images/gallery-2-3.jpg')"></div>
+      <div class="flower-slide-img" style="background-image:url('images/gallery-2-4.jpg')"></div>
+      <div class="flower-slide-img" style="background-image:url('images/gallery-2-5.jpg')"></div>
+      <div class="flower-slide-img" style="background-image:url('images/gallery-2-6.jpg')"></div>
+      <div class="flower-slide-img" style="background-image:url('images/gallery-2-7.jpg')"></div>
+      <div class="flower-slide-img" style="background-image:url('images/gallery-2-8.jpg')"></div>
+      <div class="shine-sweep"></div>
+      <span>NIGHT PHOTO</span>
+      <em class="tap-hint">タップで拡大</em>
+    </div>
+    <div class="gallery-item g4 flower-slide" data-aos
+      data-full-list="images/gallery-4-1.jpg,images/gallery-4-2.jpg,images/gallery-4-3.jpg,images/gallery-4-4.jpg,images/gallery-4-5.jpg,images/gallery-4-6.jpg,images/gallery-4-7.jpg,images/gallery-4-8.jpg">
+      <div class="flower-slide-img" style="background-image:url('images/gallery-4-1.jpg')"></div>
+      <div class="flower-slide-img" style="background-image:url('images/gallery-4-2.jpg')"></div>
+      <div class="flower-slide-img" style="background-image:url('images/gallery-4-3.jpg')"></div>
+      <div class="flower-slide-img" style="background-image:url('images/gallery-4-4.jpg')"></div>
+      <div class="flower-slide-img" style="background-image:url('images/gallery-4-5.jpg')"></div>
+      <div class="flower-slide-img" style="background-image:url('images/gallery-4-6.jpg')"></div>
+      <div class="flower-slide-img" style="background-image:url('images/gallery-4-7.jpg')"></div>
+      <div class="flower-slide-img" style="background-image:url('images/gallery-4-8.jpg')"></div>
+      <div class="shine-sweep"></div>
+      <span>FLOWER</span>
+      <em class="tap-hint">タップで拡大</em>
+    </div>
+    <div class="gallery-item g7 photo-slide" data-aos
+      data-full-list="images/gallery-7-1.jpg,images/gallery-7-2.jpg,images/gallery-7-3.jpg,images/gallery-7-4.jpg,images/gallery-7-5.jpg,images/gallery-7-6.jpg,images/gallery-7-7.jpg,images/gallery-7-8.jpg">
+      <div class="flower-slide-img" style="background-image:url('images/gallery-7-1.jpg')"></div>
+      <div class="flower-slide-img" style="background-image:url('images/gallery-7-2.jpg')"></div>
+      <div class="flower-slide-img" style="background-image:url('images/gallery-7-3.jpg')"></div>
+      <div class="flower-slide-img" style="background-image:url('images/gallery-7-4.jpg')"></div>
+      <div class="flower-slide-img" style="background-image:url('images/gallery-7-5.jpg')"></div>
+      <div class="flower-slide-img" style="background-image:url('images/gallery-7-6.jpg')"></div>
+      <div class="flower-slide-img" style="background-image:url('images/gallery-7-7.jpg')"></div>
+      <div class="flower-slide-img" style="background-image:url('images/gallery-7-8.jpg')"></div>
+      <div class="shine-sweep"></div>
+      <span>CAR PHOTO</span>
+      <em class="tap-hint">タップで拡大</em>
+    </div>
+  </div>
+</section>
+
+<!-- ライトボックス -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="閉じる">&times;</button>
+  <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="前へ">&#8249;</button>
+  <img class="lightbox-img" id="lightboxImg" src="" alt="">
+  <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="次へ">&#8250;</button>
+</div>
+
+<!-- MEMBER / 募集要項 -->
+<section class="requirement" id="requirement">
+  <div class="container">
+    <p class="section-kicker" data-aos>RECRUITMENT</p>
+    <h2 class="section-title" data-aos>募集要項</h2>
+    <div class="req-table" data-aos>
+      <div class="req-row">
+        <div class="req-label">対象</div>
+        <div class="req-value">20代の男女（車好き・写真好き・ドライブ好き大歓迎）</div>
+      </div>
+      <div class="req-row">
+        <div class="req-label">車種</div>
+        <div class="req-value">不問。所有していない方の見学参加も歓迎</div>
+      </div>
+      <div class="req-row">
+        <div class="req-label">活動内容</div>
+        <div class="req-value">ドライブ / 撮影会 / カフェ巡り・オフ会 / 車談義</div>
+      </div>
+      <div class="req-row">
+        <div class="req-label">頻度</div>
+        <div class="req-value">月1〜2回程度（週末中心）</div>
+      </div>
+      <div class="req-row">
+        <div class="req-label">条件</div>
+        <div class="req-value">安全運転を心がけられる方 / マナーを守れる方</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="contact-glow-ring"></div>
+  <div class="container contact-inner">
+    <h2 class="contact-finale" data-aos>
+      <span>一緒に</span><span class="shine">走り出そう</span>
+    </h2>
+    <p class="contact-sub" data-aos>ご応募・ご質問は、担当者までお気軽にご連絡ください。</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <a href="#top" class="logo">CAR<span>&</span>DRIVE</a>
+    <p>&copy; 2026 CAR & DRIVE FRIENDS. All rights reserved.</p>
+  </div>
+</footer>
+
+<a href="#top" class="to-top" id="toTop">↑</a>
+
+<script src="script.js"></script>
+</body>
+</html>
