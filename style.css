@@ -626,6 +626,82 @@ section { padding: 130px 0; position: relative; }
   100% { transform: scale(1.12); }
 }
 
+/* ===== INSTAGRAM ===== */
+.insta-wrap {
+  max-width: 980px;
+  margin: 72px auto 0;
+  padding: 0 32px;
+}
+.insta-card {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  align-items: center;
+  gap: 48px;
+  padding: 40px 48px;
+  background:
+    radial-gradient(ellipse at 0% 0%, rgba(220,39,67,.18), transparent 55%),
+    var(--bg-soft);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  transition: border-color .4s ease, box-shadow .4s ease;
+}
+.insta-card:hover {
+  border-color: rgba(220,39,67,.6);
+  box-shadow: 0 20px 50px rgba(220,39,67,.2);
+}
+.insta-qr {
+  display: block;
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,.45);
+  transition: transform .4s ease, box-shadow .4s ease;
+}
+.insta-qr:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(220,39,67,.35); }
+.insta-qr img { display: block; width: 100%; height: auto; }
+.insta-kicker {
+  font-family: var(--ff-en);
+  color: var(--accent);
+  letter-spacing: 5px;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+.insta-handle {
+  font-family: var(--ff-en);
+  font-size: clamp(26px, 4vw, 38px);
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 1.3;
+}
+.insta-text { color: var(--text-dim); font-size: 15px; margin: 14px 0 28px; }
+.insta-text span { display: inline-block; }
+.btn-insta {
+  gap: 10px;
+  background: linear-gradient(45deg, #f09433 0%, #dc2743 50%, #bc1888 100%);
+  color: #fff;
+  box-shadow: 0 10px 30px rgba(220,39,67,.3);
+}
+.btn-insta:hover { transform: translateY(-3px); box-shadow: 0 14px 34px rgba(220,39,67,.45); }
+.ig-icon {
+  width: 18px; height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.ig-icon .ig-dot { fill: currentColor; stroke: none; }
+@media (max-width: 700px) {
+  .insta-card {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    gap: 28px;
+    padding: 32px 24px;
+  }
+  .insta-qr { width: 220px; }
+}
+
 /* ===== REQUIREMENT ===== */
 .req-table { border-top: 1px solid var(--line); }
 .req-row {
